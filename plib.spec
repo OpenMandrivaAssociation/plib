@@ -12,7 +12,6 @@ Source0:	http://plib.sourceforge.net/dist/%{name}-%{version}.tar.bz2
 Patch0:		plib-gcc.patch
 URL:		http://plib.sourceforge.net/
 Buildrequires:	MesaGLU-devel Mesa-common-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 # Author: Steve J. Baker <sjbaker1@airmail.net>
 
 %description
