@@ -1,6 +1,6 @@
 %define	name	plib
 %define	version	1.8.4
-%define	release	%mkrel 4
+%define	release	%mkrel 6
 
 Summary:	Steve's Portable Game Library
 Name:		%{name}
