@@ -1,15 +1,14 @@
 %define	name	plib
-%define	version	1.8.4
-%define	release	%mkrel 6
+%define	version	1.8.5
+%define	release	%mkrel 1
 
 Summary:	Steve's Portable Game Library
 Name:		%{name}
 Version:	%{version}
 Release:	%{release}
-License:	LGPL
+License:	LGPLv2+
 Group:		Development/C++
-Source0:	http://plib.sourceforge.net/dist/%{name}-%{version}.tar.bz2
-Patch0:		plib-gcc.patch
+Source0:	http://plib.sourceforge.net/dist/%{name}-%{version}.tar.gz
 URL:		http://plib.sourceforge.net/
 Buildrequires:	MesaGLU-devel Mesa-common-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -32,7 +31,6 @@ applications which will use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 export CFLAGS="$RPM_OPT_FLAGS -fPIC"
