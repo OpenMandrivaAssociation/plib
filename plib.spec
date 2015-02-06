@@ -4,7 +4,7 @@
 Summary:	Steve's Portable Game Library
 Name:		plib
 Version:	1.8.5
-Release:	6
+Release:	7
 License:	LGPLv2+
 Group:		Development/C++
 URL:		http://plib.sourceforge.net/
