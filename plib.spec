@@ -1,10 +1,11 @@
 %define _enable_debug_packages %{nil}
 %define debug_package %{nil}
+%define _disable_lto 1
 
 Summary:	Steve's Portable Game Library
 Name:		plib
 Version:	1.8.5
-Release:	8
+Release:	9
 License:	LGPLv2+
 Group:		Development/C++
 URL:		http://plib.sourceforge.net/
