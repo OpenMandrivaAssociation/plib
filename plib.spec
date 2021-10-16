@@ -35,7 +35,7 @@ applications which will use %{name}.
 %files devel
 %doc README ChangeLog AUTHORS KNOWN_BUGS
 %{_libdir}/lib%{name}*.a
-#{_includedir}/plib/
+%{_includedir}/plib/
 
 #----------------------------------------------------
 
