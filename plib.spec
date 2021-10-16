@@ -1,11 +1,11 @@
-%define _enable_debug_packages %{nil}
-%define debug_package %{nil}
+%define _empty_manifest_terminate_build 0
+
 %define _disable_lto 1
 
 Summary:	Steve's Portable Game Library
 Name:		plib
 Version:	1.8.5
-Release:	9
+Release:	10
 License:	LGPLv2+
 Group:		Development/C++
 URL:		http://plib.sourceforge.net/
@@ -47,10 +47,10 @@ applications which will use %{name}.
 export CFLAGS="%{optflags} -fPIC"
 export LDFLAGS="%{optflags} -fPIC"
 export CXXFLAGS="%{optflags} -fPIC"
-%configure2_5x
-%make
+%configure
+%make_build
 
 %install
-%makeinstall \
+%make_install \
 	includedir=%{buildroot}%{_includedir}/%{name}
 
