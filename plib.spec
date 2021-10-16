@@ -51,6 +51,6 @@ export CXXFLAGS="%{optflags} -fPIC"
 %make_build
 
 %install
-%make_install \
+%makeinstall \
 	includedir=%{buildroot}%{_includedir}/%{name}
 
